@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/ziggy_icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Ziggy" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Ziggy</title>
+    <style>
+        /* Airbnb Cereal App */
+
+        @font-face {
+            src: local('Airbnb Cereal App Light'), url(https://dzplis26jli6g.cloudfront.net/files/7kpmc9qdf-AirbnbCerealLight.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Airbnb Cereal App';
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Airbnb Cereal App Medium'), url(https://dzplis26jli6g.cloudfront.net/files/7kpmc9qee-AirbnbCerealMedium.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Airbnb Cereal App';
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Airbnb Cereal App Bold'), url(https://dzplis26jli6g.cloudfront.net/files/7kpmc9qcq-AirbnbCerealBold.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Airbnb Cereal App';
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Airbnb Cereal App Black'), url(https://dzplis26jli6g.cloudfront.net/files/7kpmc9qb8-AirbnbCerealBlack.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Airbnb Cereal App';
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        /* Config Condensed */
+
+        @font-face {
+            src: local('Config Condensed Light'), url(https://dzplis26jli6g.cloudfront.net/files/8kpmccnz8-ConfigCondensedLight.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Config Condensed';
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Config Condensed Regular'), url(https://dzplis26jli6g.cloudfront.net/files/8kpmcco0t-ConfigCondensedRegular.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Config Condensed';
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Config Condensed Medium'), url(https://dzplis26jli6g.cloudfront.net/files/8kpmccnzn-ConfigCondensedMedium.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Config Condensed';
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Config Condensed Bold'), url(https://dzplis26jli6g.cloudfront.net/files/8kpmccnyn-ConfigCondensedBold.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Config Condensed';
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        @font-face {
+            src: local('Config Condensed Black'), url(https://dzplis26jli6g.cloudfront.net/files/8kpmccnx1-ConfigCondensedBlack.woff) format('truetype');
+            font-style: normal;
+            font-family: 'Config Condensed';
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+    <script>
+      (function () {
+        const fontsToPreload = [
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/8kpmccnz8-ConfigCondensedLight.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/8kpmcco0t-ConfigCondensedRegular.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/8kpmccnzn-ConfigCondensedMedium.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/8kpmccnyn-ConfigCondensedBold.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/8kpmccnx1-ConfigCondensedBlack.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/7kpmc9qdf-AirbnbCerealLight.woff',
+            'type': 'font/woff'
+          },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/7kpmc9qee-AirbnbCerealMedium.woff',
+            'type': 'font/woff'
+          },
+          { 'href': 'https://dzplis26jli6g.cloudfront.net/files/7kpmc9qcq-AirbnbCerealBold.woff', 'type': 'font/woff' },
+          {
+            'href': 'https://dzplis26jli6g.cloudfront.net/files/7kpmc9qb8-AirbnbCerealBlack.woff',
+            'type': 'font/woff'
+          }
+
+        ];
+
+        const fragment = document.createDocumentFragment();
+        for (let font of fontsToPreload) {
+          const preload = document.createElement('link');
+          preload.rel = 'preload';
+          preload.href = font.href;
+          preload.type = font.type;
+          preload.as = 'font';
+          preload.crossOrigin = 'anonymous';
+          fragment.appendChild(preload);
+        }
+        document.head.appendChild(fragment);
+      })();
+    </script>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
+</html>
